@@ -1,4 +1,6 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRightFromBracket, faGear, faSignal } from '@fortawesome/free-solid-svg-icons';
 
 function SideBar(){
     return (
@@ -25,11 +27,13 @@ function SideBar(){
                             </li>
                             <li>
                                 <Link to="/" className="text-gray-300 hover:text-white">
+                                    <FontAwesomeIcon icon={faSignal} />
                                     Analytics
                                 </Link>
                             </li>
                             <li>
                                 <Link to="/" className="text-gray-300 hover:text-white">
+                                    <FontAwesomeIcon icon={faGear} />
                                     Settings
                                 </Link>
                             </li>
@@ -39,7 +43,10 @@ function SideBar(){
 
                 </div>
                 <div>
-                    <Link className="text-gray-300 hover:text-white"> Logout </Link>
+                    <Link className="text-gray-300 hover:text-white">
+                      <FontAwesomeIcon icon={faArrowRightFromBracket} />
+                         Logout 
+                    </Link>
                 </div>
             </div>
         </>
