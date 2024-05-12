@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRightFromBracket, faGear, faSignal } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRightFromBracket, faGear, faSignal, faHouseChimney, faGauge } from '@fortawesome/free-solid-svg-icons';
 
 function SideBar(){
     return (
@@ -9,14 +9,16 @@ function SideBar(){
                 <div className="flex flex-col gap-16 justify-between">
                     <h2 className="text-xl font-bold mb-4">SpeechAnalytics</h2>
                     <nav className="">
-                        <ul className="flex flex-col items-center">
+                        <ul className="flex flex-col items-start">
                             <li className="mb-2">
                                 <Link to="/" className="text-gray-300 hover:text-white">
+                                    <FontAwesomeIcon icon={faGauge} />
                                     Personal Page
                                 </Link>
                             </li>
                             <li>
                                 <Link to="/" className="text-gray-300 hover:text-white">
+                                    <FontAwesomeIcon icon={faHouseChimney} />
                                     Dashboard
                                 </Link>
                             </li>
