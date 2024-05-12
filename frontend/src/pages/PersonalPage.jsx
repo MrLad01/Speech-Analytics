@@ -1,7 +1,7 @@
 import React from 'react';
 import SideBar from "../components/SideBar"
 import PpPieChart from '../components/PieChart';
-
+// import PhoneCall from '@styled-icons/evaicons-solid/PhoneCall'
 
 function PersonalPage(){
     return (
@@ -41,7 +41,9 @@ function PersonalPage(){
                             <span>523</span>
                         </div>
                         <div>
-                            <div>Call icon</div>
+                            <div>
+                                {/* <PhoneCall /> */}
+                            </div>
                             <div>Answered calls</div>
                             <span>Last week</span>
                             <span>523</span>
