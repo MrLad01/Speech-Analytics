@@ -1,6 +1,8 @@
 import React from 'react';
 import SideBar from "../components/SideBar"
 import PpPieChart from '../components/PieChart';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCircleUser } from '@fortawesome/free-solid-svg-icons';
 // import PhoneCall from '@styled-icons/evaicons-solid/PhoneCall'
 
 function PersonalPage(){
@@ -14,7 +16,9 @@ function PersonalPage(){
                             <div>/personal page</div>
                             <h1>Personal Page</h1>
                         </div>
-                        <div>person icon</div>
+                        <div>
+                        <FontAwesomeIcon icon={faCircleUser} size='2x' />
+                        </div>
                     </div>
                     <div className="flex justify-between items-center">
                         <div className="flex gap-6 items-center">
@@ -32,7 +36,8 @@ function PersonalPage(){
                     </div>
                     <div className="flex items-center justify-around pr-20">
                         <div>
-                            person icon
+                            {/* // <FontAwesomeIcon icon="fa-solid fa-circle-user" /> */}
+                            <FontAwesomeIcon icon={faCircleUser} size='8x' />
                         </div>
                         <div>
                             <div>Call icon</div>
