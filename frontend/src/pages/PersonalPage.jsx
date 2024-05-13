@@ -2,7 +2,7 @@ import React from 'react';
 import SideBar from "../components/SideBar"
 import PpPieChart from '../components/PieChart';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCircleUser } from '@fortawesome/free-solid-svg-icons';
+import { faCircleUser, faRotateRight, faPhone, faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
 // import PhoneCall from '@styled-icons/evaicons-solid/PhoneCall'
 
 function PersonalPage(){
@@ -23,7 +23,9 @@ function PersonalPage(){
                     <div className="flex justify-between items-center">
                         <div className="flex gap-6 items-center">
                             {/* <img src="" alt="" /> */}
-                            <div>reload</div>
+                            <div>
+                             <FontAwesomeIcon icon={faRotateRight} />
+                            </div>
                             <div className="flex py-2 px-4  bg-[#1A1F37]">
                                 <div className="px-3 py-1 hover:bg-[#0075FF] cursor-pointer">Week</div>
                                 <div className="px-3 py-1 hover:bg-[#0075FF] cursor-pointer">Month</div>
@@ -40,7 +42,9 @@ function PersonalPage(){
                             <FontAwesomeIcon icon={faCircleUser} size='8x' />
                         </div>
                         <div>
-                            <div>Call icon</div>
+                            <div>
+                                <FontAwesomeIcon icon={faPhone} />
+                            </div>
                             <div>Incoming call</div>
                             <span>Last week</span>
                             <span>523</span>
@@ -48,6 +52,7 @@ function PersonalPage(){
                         <div>
                             <div>
                                 {/* <PhoneCall /> */}
+                                <FontAwesomeIcon icon={faPhoneVolume} />
                             </div>
                             <div>Answered calls</div>
                             <span>Last week</span>
