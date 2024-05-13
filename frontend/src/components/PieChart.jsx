@@ -27,13 +27,13 @@ export default class PpPieChart extends PureComponent {
   render() {
     return (
       <ResponsiveContainer width="100%" height="100%">
-        <PieChart width={500} height={500}>
+        <PieChart width={700} height={700}>
           <Pie
             data={data}
             cx="50%"
             cy="50%"
             labelLine={false}
-            outerRadius={80}
+            outerRadius={130}
             dataKey="value"
             // label={renderCustomizedLabel}
             // fill="#8884d8"
